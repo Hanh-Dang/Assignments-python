@@ -43,3 +43,14 @@ def Information():
     age = int(input("Enter your age: "))
     print(f"In 15 years, age of {name} will be {age + 15}")
 
+#test 
+def tinhtoan():
+    a = int(input())
+    b = int(input())
+    print("a + b =" + str(a+b))
+    print("a - b =" + str(a-b))
+    print("a * b =" + str(a*b))
+    print("a / b =" + str(a/b))
+    print("a % b =" + str(a%b))
+
+tinhtoan()
