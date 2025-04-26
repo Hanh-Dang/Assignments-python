@@ -262,3 +262,82 @@ def list2():
         total += a # sum(list) = sum(list1) + sum(list2) + sum(list3) + ... + sum(listn)
     print("Total of the list is",total)
 
+#list3
+def list3():
+    n = int(input("Enter quanity of list: "))
+    list3 = []
+    for i in range(n):
+        list1.append(int(input("Enter number: ")))
+    for i in range(len(list3)): #i không thể bằng 0 vì không có phần tử nào trong list3
+        for j in range(i): #Duyệt qua từng phần tử trong list3 
+            if list3[i] < list3[j]:
+                list3[i], list3[j] = list3[j], list3[i] # tmp = list[i], list[i] = list[j], list[j] = tmp
+    print("The sorted list is",list3) #In danh sách đã được sắp xếp theo thứ tự tăng dần
+
+#Max_min
+def Max_min():
+    lst = [1, 2, 3, 4, 5]
+    print("Max value in the list is",max(lst)) #Tìm giá trị lớn nhất trong lst
+    print("Min value in the list is",min(lst)) #Tìm giá trị nhỏ nhất trong lst
+
+#insert
+def insertt():
+    vowels = ['a', 'e', 'i', 'o', 'u']
+    vowels.insert(3,'y') #Thêm 'y' vào vị trí thứ 3 trong danh sách vowels
+    print("The list after inserting 'y' is",vowels) #In danh sách vowels sau khi thêm 'y'
+
+#remove
+def removee():
+    lst = ['A' , 'B' , 'C' , 'D' , 'E']
+    lst.remove('C') #Xóa phần tử 'C' trong danh sách lst
+    print("The list after removing 'C' is",lst) #In danh sách lst sau khi xóa 'C' 
+
+#pop
+def popp():
+    lst = ['A' , 'B' , 'C' , 'D' , 'E']
+    lst.pop(3) #Xóa phần tử tại vị trí thứ 3 trong danh sách lst
+    print("The list after popping the element at index 3 is",lst) #In danh sách lst sau khi xóa phần tử tại vị trí thứ 3
+    lst.pop() #Xóa phần tử cuối cùng trong danh sách lst
+    print("The list after popping the last element is",lst) #In danh sách lst sau khi xóa phần tử cuối cùng
+
+#sort
+def sortt():
+    lst = [5, 2, 9, 1, 5, 6]
+    lst.sort() #Sắp xếp danh sách lst theo thứ tự tăng dần = lst.sort(reverse=False)
+    # lst = sorted(lst) #Sắp xếp danh sách lst theo thứ tự tăng dần
+    print("The sorted list is",lst) #In danh sách lst đã được sắp xếp theo thứ tự tăng dần
+    lst.sort(reverse=True) #Sắp xếp danh sách lst theo thứ tự giảm dần
+    print("The sorted list in descending order is",lst) #In danh sách lst đã được sắp xếp theo thứ tự giảm dần
+
+#reverse
+def reversee():
+    lst = [1, 2, 3, 4, 5]
+    lst.reverse() #Đảo ngược danh sách lst
+    print("The reversed list is",lst) #In danh sách lst đã được đảo ngược
+
+#count
+def countt():
+    lst = [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
+    count = lst.count(1) #Đếm số lần xuất hiện của phần tử '1' trong danh sách lst
+    print("The count of '1' in the list is",count) #In số lần xuất hiện của phần tử '1' trong danh sách lst
+
+#clear 
+def clearr():
+    lst = [1, 2, 3, 4, 5]
+    lst.clear() #Xóa tất cả các phần tử trong danh sách lst
+    print("The list after clearing is",lst) #In danh sách lst sau khi xóa tất cả các phần tử trong danh sách lst
+
+#copy
+def copyy():
+    lst = [1, 2, 3, 4, 5]
+    lst2 = lst.copy() #Sao chép danh sách lst sang danh sách lst2
+    print("The copied list is",lst2) #In danh sách lst2 đã được sao chép từ danh sách lst
+
+#extend
+def extendd():
+    lst1 = [1, 2, 3]
+    lst2 = [4, 5, 6]
+    lst1.extend(lst2) #Mở rộng danh sách lst1 bằng cách thêm các phần tử trong danh sách lst2 vào danh sách lst1
+    print("The extended list is",lst1) #In danh sách lst1 đã được mở rộng bằng cách thêm các phần tử trong danh sách lst2 vào danh sách lst1
+    lst1.extend([7, 8, 9]) #Mở rộng danh sách lst1 bằng cách thêm các phần tử [7, 8, 9] vào danh sách lst1
+    print("The extended list is",lst1) #In danh sách lst1 đã được mở rộng bằng cách thêm các phần tử [7, 8, 9] vào danh sách lst1
